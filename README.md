@@ -1,2 +1,2 @@
 # MachineLearning-802
-Profundización I Machine Learning, 802, 2025-II
+Trabajo 1: Regresión Logistica
