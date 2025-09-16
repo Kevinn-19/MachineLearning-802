@@ -1,17 +1,15 @@
 # Clasificación de Plantas Usando Regresión Lineal con el Dataset IRIS
 ## Presentado por: Kevin Esteban Chiquillo Díaz
 
-Este trabajo implementa un modelo de **Regresión Logística** para clasificar correos electrónicos como HAM o SPAM, usando un dataset simulado artificial con características de envío, dominio y contenido.
+En este trabajo se aplica un modelo de regresión lineal con el objetivo de realizar una tarea de clasificación supervisada. Aunque la regresión lineal es un método pensado originalmente para predecir valores continuos, en este caso se adapta el enfoque para clasificar especies de flores. El procedimiento consiste en entrenar el modelo usando dos variables predictoras y luego transformar la salida continua del modelo en una etiqueta discreta mediante redondeo.
+
+El análisis se enfoca en el uso de las variables petal length y petal width, ya que estas presentan una mayor capacidad discriminativa entre especies.
 
 ## Explicación de Archivos
 - `Iris.py` : Script para entrenar el modelo de regresión lineal.
 - `RegresiónLineal.md` : Este archivo.
 
 ---
-
-En este trabajo se aplica un modelo de regresión lineal con el objetivo de realizar una tarea de clasificación supervisada. Aunque la regresión lineal es un método pensado originalmente para predecir valores continuos, en este caso se adapta el enfoque para clasificar especies de flores. El procedimiento consiste en entrenar el modelo usando dos variables predictoras y luego transformar la salida continua del modelo en una etiqueta discreta mediante redondeo.
-
-El análisis se enfoca en el uso de las variables petal length y petal width, ya que estas presentan una mayor capacidad discriminativa entre especies.
 
 ## 1. Importación de Librerías
 En este proyecto se importan varias librerías esenciales para el desarrollo del modelo. **NumPy** se utiliza para el manejo de arreglos y operaciones matemáticas necesarias durante el procesamiento de datos y la transformación de predicciones. **Matplotlib**, a través de su módulo pyplot, permite generar las visualizaciones que representan tanto las rectas de regresión como la frontera de decisión y la matriz de confusión. Desde **scikit-learn** se emplea **load_iris** para cargar directamente el dataset de Iris, **LinearRegression** para implementar el modelo de regresión lineal, y **train_test_split** con el fin de dividir los datos en conjuntos de entrenamiento y prueba de manera controlada. Finalmente, se importan las funciones de métricas **accuracy_score**, **classification_report** y **confusion_matrix**, que permiten evaluar el rendimiento del modelo a través de medidas de exactitud, reportes detallados por clase y un resumen gráfico de los aciertos y errores.
