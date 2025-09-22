@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1️ Cargar dataset
-df = pd.read_csv("Regresión Logistica/dataset_correos_final.csv")
+df = pd.read_csv("1. Regresión Logistica Correos/dataset_correos_final.csv")
 df = df.sample(frac=1).reset_index(drop=True)
 
 
